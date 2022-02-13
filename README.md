@@ -1,6 +1,6 @@
 # Hyperjump Bookkeeping
 
-Bookkeeping is a generic double entry book keeping and journaling management service. It implements the [acccore](https://github.com/hyperjumptech/acccore) accounting library. The service is intended for any applications where double-entry bookkeeping is required, such as walletsand loyalty programs.
+Bookkeeping is a generic double entry book keeping and journaling management service. It implements the [acccore](https://github.com/hyperjumptech/acccore) accounting library. The service is intended for any applications where double-entry bookkeeping is required, such as wallets and loyalty programs.
 
 ## building  
 
@@ -22,7 +22,7 @@ or
 
 ## binary generation
 
-`go build -a -o wallet-go-img cmd/Main.go`  
+`go build -a -o bookkeeping-go-img cmd/Main.go`  
   
 or  
   

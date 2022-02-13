@@ -1,4 +1,4 @@
-# hyper-wallet makefile
+# bookkeeping makefile
 
 CURRENT_PATH ?= $(shell pwd)
 IMAGE_NAME ?= wallet-go-img
@@ -13,13 +13,10 @@ clean:
 	go clean
 	rm -f $(IMAGE_NAME)
 
-lint: build
-	golint -set_exit_status ./...
-
-test-short: lint
+test-short: build
 	go test ./... -v -covermode=count -coverprofile=coverage.out -short
 
-test: lint
+test: build
 	go test ./... -v -race -covermode=atomic -coverprofile=coverage.out
 
 run: build
