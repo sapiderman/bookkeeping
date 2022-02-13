@@ -1,8 +1,6 @@
 name: Github Actions - Go Build and Test
 
-on:
-  push:
-    branches: [ main ]
+on: push
   pull_request:
     branches: [ main ]
 
