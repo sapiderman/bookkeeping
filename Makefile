@@ -1,7 +1,7 @@
 # bookkeeping makefile
 
 CURRENT_PATH ?= $(shell pwd)
-IMAGE_NAME ?= wallet-go-img
+IMAGE_NAME ?= bookkeeping-go-img
 
 .PHONY: all test clean build docker
 
